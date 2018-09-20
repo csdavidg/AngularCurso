@@ -1,3 +1,11 @@
+.main-container {
+  margin-top: 25px;
+}
+
+body {
+  padding-bottom: 25px;
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
