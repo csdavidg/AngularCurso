@@ -16,7 +16,7 @@ export class HeroesService {
       bio: "Aventurero, artista, soldado, oficial de policía, agente de S.H.I.E.L.D, maestro, el pináculo de la perfección humana, El Capitán América.",
       img: "assets/img/capitan.jpg",
       aparicion: "1941-03-01",
-      casa: "Marvelng serve"
+      casa: "Marvel"
     },
     {
       nombre: "Batman",
@@ -68,6 +68,10 @@ export class HeroesService {
 
   getHeroes() {
     return this.heroes;
+  }
+
+  getHeroe(idx: string) {
+    return this.heroes[idx];
   }
 
 }
