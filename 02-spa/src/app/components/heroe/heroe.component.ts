@@ -8,12 +8,13 @@ import {HeroesService} from "../../services/heroes.service";
 })
 export class HeroeComponent {
 
-  heroe: any = [];
+  heroe: any = {};
 
-  constructor(private activateRoute: ActivatedRoute,
-              private heroesService: HeroesService) {
-    this.activateRoute.params.subscribe(params => {
-      this.heroe = this.heroesService.getHeroe(params.id);
+  constructor(private activatedRoute: ActivatedRoute, private heroesService: HeroesService) {
+    activatedRoute.params.subscribe(params => {
+
+      let id: number = params.id;
+      this.heroe = heroesService.getHeroe(id);
     });
   }
 

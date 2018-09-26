@@ -13,8 +13,9 @@ import {NavbarComponent} from './components/shared/navbar/navbar.component';
 import {HomeComponent} from './components/home/home.component';
 import {AboutComponent} from './components/about/about.component';
 import {HeroesComponent} from './components/heroes/heroes.component';
-import {HeroeComponent} from './components/heroe/heroe.component';
 import {HeroeTarjetaComponent} from './components/heroeTarjeta/heroeTarjeta.component';
+import { HeroeComponent } from './components/heroe/heroe.component';
+import { ResultadoBusquedaComponent } from './components/resultadoBusqueda/resultadoBusqueda.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {HeroeTarjetaComponent} from './components/heroeTarjeta/heroeTarjeta.comp
     AboutComponent,
     HeroesComponent,
     HeroeComponent,
-    HeroeTarjetaComponent
+    HeroeTarjetaComponent,
+    ResultadoBusquedaComponent
   ],
   imports: [
     BrowserModule,
