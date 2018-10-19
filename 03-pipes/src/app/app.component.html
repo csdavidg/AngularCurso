@@ -82,6 +82,36 @@
       <td>number:'.2-2'</td>
       <td>{{salario | number:'.2-2'}}</td>
     </tr>
+    <tr>
+      <td>{{valorPromesa}}</td>
+      <td>Asyncrono</td>
+      <td>{{valorPromesa | async}}</td>
+    </tr>
+    <tr>
+      <td>{{fecha}}</td>
+      <td>Date</td>
+      <td>{{fecha | date}}</td>
+    </tr>
+    <tr>
+      <td>{{fecha}}</td>
+      <td>Date:'medium'</td>
+      <td>{{fecha | date:'medium'}}</td>
+    </tr>
+    <tr>
+      <td>{{fecha}}</td>
+      <td>Date:'YYYY - MM'</td>
+      <td>{{fecha | date:'MMMM - dd'}}</td>
+    </tr>
+    <tr>
+      <td>{{nombre2}}</td>
+      <td>capitalizado</td>
+      <td>{{nombre2 | capitalizado }}</td>
+    </tr>
+    <tr>
+      <td>{{nombre2}}</td>
+      <td>capitalizado</td>
+      <td>{{nombre2 | capitalizado: false }}</td>
+    </tr>
     </tbody>
   </table>
 
@@ -90,4 +120,9 @@
 
     <li *ngFor="let item of arreglo | slice:5:20">{{item}}</li>
   </ul>
+
+  <h4>JSON</h4>
+  <pre>
+    {{heroe | json}}
+  </pre>
 </div>
