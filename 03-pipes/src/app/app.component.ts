@@ -30,4 +30,7 @@ export class AppComponent {
 
   fecha = new Date();
 
+  video = 'list=RDXfqQqjpeY90';
+
+  mostrar = true;
 }
