@@ -17,7 +17,7 @@ export class SearchComponent {
 
   buscar(valor: string) {
     this.loading = true;
-    this.service.getArtista(valor).subscribe((data: any) => {
+    this.service.getArtistas(valor).subscribe((data: any) => {
       this.artistas = data;
       this.loading = false;
     });
